@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jots App – Alice Beyer</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fonts (match Scape Portal) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="navbar-brand">
+            <a href="index.html">Alice Beyer</a>
+        </div>
+
+        <button class="toggle-button" onclick="toggleNav()" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="nav-links">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Work</a></li>
+                <li><a href="contact.html" class="contact-btn">Get in Touch</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Breadcrumb -->
+<section class="breadcrumb">
+    <div class="breadcrumb-container">
+        <nav class="breadcrumb-nav">
+            <a href="portfolio.html">Portfolio</a>
+            <span>›</span>
+            <span>Jots App</span>
+        </nav>
+    </div>
+</section>
+
+<!-- Case Study Hero -->
+<section class="case-study-hero">
+    <div class="case-study-hero-container">
+
+        <img src="img/jotsheroimage.png" alt="Jots App Interface" class="case-study-hero-image">
+
+        <div class="case-study-title-section">
+            <h1 class="case-study-title">Jots App</h1>
+            <p class="case-study-subtitle">Designing a Digital Journaling Experience</p>
+
+            <div class="case-study-meta">
+                <div class="meta-item">
+                    <div class="meta-label">Timeline</div>
+                    <div class="meta-value">March – June 2023</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Role</div>
+                    <div class="meta-value">UX/UI Designer</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">Type</div>
+                    <div class="meta-value">Mobile App Design</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Case Study Content -->
+<section class="case-study-content-section">
+    <div class="case-study-content">
+
+        <!-- YOUR EXISTING CONTENT STARTS (UNCHANGED) -->
+
+
+
+        <!-- keep ALL your existing headings, paragraphs, images, lists -->
+        <!-- no structural changes inside content -->
+
+<h3>Overview</h3> <p>Jots is a digital journaling app that aims to improve how people capture their daily experiences through journaling. It was created in response to the problem that existing tools didn’t support a seamless integration of text, photos, and videos. This led to a disjointed journaling experience that detracts from being able to reflect on events and emotions. This case study details Jots’ app creation from initial concepts to rounds of user testing and final iterations, with a focus on iterating based on user feedback.</p> <img src="img/journalexample.png" alt="Case Study Image 1" class="case-study-image"> <div class="section"> <h2>Background</h2> <p> I started this project by reflecting on my personal struggles with traditional journaling, being asked to find a task that could be improved through an online application. </p> <h4>Challenges Identified</h4> <ul> <li><strong>Consistency:</strong> I’d lose motivation to journal often, and the more days I missed, the more difficult it felt to start again. </li> <li><strong>Media Integration:</strong> I wanted to be able to integrate multiple media types to create visually interesting journalling spreads, however, switching between different apps for photos, videos, and audio was tiring. </li> <li><strong>Emotional Barriers:</strong> Occasionally, the journalling process felt difficult to start due to self-criticism.</li> </ul> <p> To further understand these issues, I interviewed two people who also journal regularly to uncover the struggles they face with the hobby, and features that they would find helpful in a journalling app. </p> <h4>Key Insights</h4> <ul> <li> <strong>Tools and Mediums:</strong> Both interviewees used a combination of physical and digital tools (sketchbooks, notes apps) for journaling, showing a need for flexibility in journaling apps to accommodate different media types. </li> <li> <strong>Motivation and Struggles:</strong> A common challenge for both participants was consistency and motivation. They both found journaling beneficial but found it required a mental effort to start. </li> <li> <strong>Emotional Impact:</strong> Both interviewees stated that journaling helps them process emotions, making them feel accomplished or lighter afterwards. One found that sharing their journals with loved ones helped them communicate their feelings. </li> <li> <strong>Time and Place:</strong> Journaling was often completed in the evening, in bed or at home, taking anywhere from 10 to 30 minutes, and done inconsistently. </li> </ul> <img src="img/jotsuserjourney.png" alt="Case Study Image 1" class="case-study-image"> </div> <div> <h2>Initial Goals</h2> <p> The goal of Jots was to create an app that offers more flexibility than traditional journaling tools, with features that inspire users to journal more effectively and consistently. </p> </div> <div> <h2>Development</h2> <p> In line with my goals for the project, I created wireflows and UI screens for Jots. A paper prototype was developed from these screens to test usability with real users. The usability test scenario required users to add a new image to the entry titled “Mia’s Birthday.” These tests revealed the following feedback points: </p> <img src="img/jotsprototype1.png" alt="Case Study Image 1" class="case-study-image"> <h4>Test Results</h4> <ul> <li> <strong>Test 1:</strong> My participant did not complete the task successfully; however, they were able to make a new entry, adding the picture. </li> <li> <strong>Test 2:</strong> The participant first went to make a new entry as opposed to the “Mia’s Entry” option. They did complete the task successfully after a few tries. </li> </ul> <p>These tests showed the confusion that occurred for users with the + button on the navigation bar, giving me an indication that this needed to be developed further.</p> <p>In response to my first tests, I iterated the wireflow as seen below. These updated wireframes were then tested with different participants.</p> <img src="img/jotswireframe.jpg" alt="Case Study Image 1" class="case-study-image"> <h3>Test Results</h3> <ul> <li><strong>Navigation Confusion:</strong> The “New Entry” page was unclear. Users struggled to find basic actions, and the “Add Journal” button caused additional confusion.</li> <li><strong>Terminology Issues:</strong> The term “Journal” meant different things to different people, leading to confusion over whether it referred to a new entry or the entire entry list.</li> </ul> <h3>Design Solutions</h3> <p> I took this feedback and made some necessary changes: </p> <img src="img/jotsiteration.png" alt="Case Study Image 1" class="case-study-image"> <ul> <li><strong>Icon and Label Updates:</strong> Replaced ambiguous terms like “Add Journal” with clearer labels such as “Add Text.”</li> <li><strong>Revised Visual Elements:</strong> Added colour and adjusted fonts to make the interface less sterile.</li> <li><strong>Mood Tracking Clarification:</strong> Rearranged and rephrased the mood tracking feature to make it clear that it was about logging emotions, not rating the quality of an entry.</li> </ul> </div> <div> <h3>Design and Testing Process</h3> <p><strong>1st Click Test</strong></p> <p><em>Objective:</em> Check if users could easily find where to create a new journal entry.</p> <p><em>Results:</em> 9 out of 10 users got it right on the first try, indicating that the primary navigation was solid.</p> <p><strong>5-Second Test</strong></p> <p><em>Objective:</em> Capture first impressions and see how quickly users understood the purpose of key pages.</p> <p><em>Pages Tested:</em></p> <ul> <li><strong>“Mia’s Birthday” Page:</strong> Evaluated how clearly it communicated that it was a past entry.</li> <li><strong>New Entry Page:</strong> Checked if users understood the mood tracking feature.</li> </ul> <p><em>Results:</em> Users found the design functional but bland. There was confusion about mood tracking—many thought it was a rating system for the entry itself rather than a reflection on their emotions.</p> </div> <img src="img/Jots Deb-01.png" alt="Case Study Image 1" class="case-study-image"> <div> <h2>Final UI Screens</h2> <ul> <li><strong>Homepage:</strong> Kept the homepage layout relatively unchanged since it received positive feedback for its simplicity and ease of use.</li> <li><strong>New Entry Page:</strong> Refined the layout and incorporated icons to improve usability. The goal was to make it immediately clear what options users had for creating new entries.</li> </ul> </div> <div> <h3>Impact on User Experience</h3> <ul> <li><strong>Reduced Cognitive Load:</strong> Clearer labels and icons helped users grasp functionalities faster, reducing confusion and frustration.</li> <li><strong>Improved Visual Hierarchy:</strong> The updated typography and iconography made the app feel more welcoming and engaging, addressing the initial feedback of it being “soulless.”</li> <li><strong>Increased User Trust:</strong> The refined design made Jots feel more credible and reliable, which is critical for an app that handles personal data.</li> </ul> <h2>Conclusion</h2> <p> Jots evolved significantly through iterative design and testing. Addressing confusing navigation, enhancing visual appeal, and refining terminology transformed the app into a more intuitive and engaging tool for journaling. </p>
+    </div>
+</section>
+
+<!-- Related Projects -->
+<section class="related-projects">
+    <div class="related-projects-container">
+        <div class="section-label">More Work</div>
+        <h2 class="section-title">Other Projects</h2>
+
+        <div class="related-projects-grid">
+
+            <a href="project1.html" class="related-project-card">
+                <div class="project-image">
+                    <img src="img/scapehero.png" alt="Scape Portal">
+                    <div class="project-overlay">
+                        <span class="view-project">View Case Study →</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Scape Portal</h3>
+                </div>
+            </a>
+
+            <a href="project3.html" class="related-project-card">
+                <div class="project-image">
+                    <img src="img/qiflowhero.png" alt="Qi Flow">
+                    <div class="project-overlay">
+                        <span class="view-project">View Case Study →</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Qi Flow</h3>
+                </div>
+            </a>
+
+            <a href="project4.html" class="related-project-card">
+                <div class="project-image">
+                    <img src="img/tempmaph1.jpg" alt="MAPh Sculpture Trail">
+                    <div class="project-overlay">
+                        <span class="view-project">View Case Study →</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">MAPh Sculpture Trail</h3>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-brand">Alice Beyer</div>
+                <p class="footer-location">Digital Designer based in Melbourne</p>
+            </div>
+            
+            <div class="footer-right">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/alice-beyer-016377230/" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.225 0H1.775C.795 0 0 .795 0 1.775v20.45C0 23.205.795 24 1.775 24h20.45C23.205 24 24 23.205 24 22.225V1.775C24 .795 23.205 0 22.225 0zM7.1 20.452H3.75V9h3.35v11.452zm-1.675-13.064c-1.069 0-1.725-.735-1.725-1.65 0-.933.675-1.65 1.725-1.65s1.725.717 1.725 1.65c0 .915-.675 1.65-1.725 1.65zm15.477 13.064h-3.35v-5.5c0-1.314-.025-3.014-1.835-3.014-1.835 0-2.115 1.43-2.115 2.92v5.594h-3.35V9h3.215v1.57h.045c.445-.84 1.537-1.73 3.17-1.73 3.395 0 4.025 2.234 4.025 5.128v5.482h-.002z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/alicebeyerdesign/" target="_blank" class="social-link" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Alice Beyer. All rights reserved.</p>
+        </div>
+    </footer>
+
+<script>
+function toggleNav() {
+    document.querySelector('.nav-links').classList.toggle('active');
+    document.querySelector('.toggle-button').classList.toggle('active');
+}
+
+window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+</script>
+
+</body>
+</html>
