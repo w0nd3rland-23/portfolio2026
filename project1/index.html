@@ -78,7 +78,37 @@
             <h3>Problem</h3>
             <p>Exploratory research interviews revealed significant issues within the Scape community regarding the efficiency of management-resident communication, leading to unresolved maintenance problems. To address this challenge, an online solution was necessary to streamline the process of reporting building issues to management. Another key issue was the communication between residents in shared apartments, with cleaning issues being identified as a main problem for residents.</p>
             
-            <img src="../img/scapeprojectstages.png" alt="Project Stages" class="case-study-image">
+            <div class="project-timeline">
+                <div class="timeline-step">
+                    <div class="step-circle">1</div>
+                    <div class="step-title">Empathise</div>
+                    <div class="step-description">Interviews<br>Secondary Research</div>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-step">
+                    <div class="step-circle">2</div>
+                    <div class="step-title">Define</div>
+                    <div class="step-description">Data Analysis<br>Competitive Analysis</div>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-step">
+                    <div class="step-circle">3</div>
+                    <div class="step-title">Ideate</div>
+                    <div class="step-description">Sketching<br>Wireflows</div>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-step">
+                    <div class="step-circle">4</div>
+                    <div class="step-title">Prototype</div>
+                    <div class="step-description">UI Development<br>Figma Prototype</div>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-step">
+                    <div class="step-circle">5</div>
+                    <div class="step-title">Test</div>
+                    <div class="step-description">Concept Testing<br>Participatory Walkthrough</div>
+                </div>
+            </div>
             
             <h3>Solution</h3>
             <p>To solve the issues for residents at Scape La Trobe in Melbourne, my solution involved an enhanced system for reporting maintenance issues within the apartments. I developed a dedicated building page within the Scape Portal app to facilitate more efficient communication between residents and management regarding building problems.</p>
@@ -86,15 +116,9 @@
             <h3>Interviews</h3>
             <p>I conducted five interviews with members of the Scape La Trobe community. The questions focused on various topics, including communication, management, cleaning, background history, and major challenges faced while living in the community.</p>
             
-            <h4>Reported Issues Within Scape La Trobe:</h4>
-            <ul>
-                <li>Layout concerns</li>
-                <li>Cost-related issues</li>
-                <li>Maintenance problems</li>
-                <li>Cleanliness problems</li>
-            </ul>
-            
-            <img src="../img/scapeissues.png" alt="Reported Issues" class="case-study-image">
+            <div class="chart-container">
+                <canvas id="issuesChart"></canvas>
+            </div>
 
             <p>Residents spoke about problems with not feeling involved with the community due to not knowing about events, and because of the layout of the building. Some also spoke of frustrations with the apartments cleanliness. Out of the four main problems residents identified, three participants specifically highlighted building maintenance issues, making this the focal point of my solution.</p>
 
@@ -108,12 +132,32 @@
             <h3>User Flow</h3>
             <p>The existing user flow for residents to address maintenance issues was difficult for users to navigate and successfully resolve maintenance problems. Scape Portal aims to offer a more efficient method for residents, particularly when initial management responses fail to resolve their issues. Below is the user flow for Scape Portal.</p>
             
-            <img src="../img/scapeuserflow.jpg" alt="User Flow Diagram" class="case-study-image">
+            <div class="image-hover-wrapper" onclick="openModal(this)">
+                <img src="../img/scapeuserflow.jpg" alt="User Flow Diagram" class="case-study-image">
+                <div class="image-overlay-hint">Click to expand</div>
+            </div>
+
+            <div id="imageModal" class="image-modal" onclick="closeModal()">
+                <div class="modal-content" onclick="event.stopPropagation()">
+                    <span class="modal-close" onclick="closeModal()">&times;</span>
+                    <img id="modalImage" src="../img/scapeuserflow.jpg" alt="User Flow Diagram">
+                </div>
+            </div>
 
             <h3>Design Iterations</h3>
             <p>The first iteration of high-fidelity mockups featured a color palette of teal and pink, aligned with Scape's branding. Low and medium-fidelity mockups were developed in response to the insights gathered from interviews and analysis. One critical aspect I focused on was clearly communicating the visibility status of the maintenance page.</p>
             
-            <img src="../img/scape.png" alt="Design Iterations" class="case-study-image">
+            <div class="image-hover-wrapper" onclick="openModal(this)">
+                <img src="../img/scape.png" alt="Design Iterations" class="case-study-image">
+                <div class="image-overlay-hint">Click to expand</div>
+            </div>
+
+            <div id="imageModal-scape" class="image-modal" onclick="closeModal(this)">
+                <div class="modal-content" onclick="event.stopPropagation()">
+                    <span class="modal-close" onclick="closeModal()">&times;</span>
+                    <img src="../img/scape.png" alt="Design Iterations">
+                </div>
+            </div>
             
             <h3>Solution Impact</h3>
 
@@ -134,7 +178,17 @@
             <p>In response to the testing feedback, I made final iterations to Scape Portal, particularly addressing the design challenges identified in the 5-second test. These refinements aim to create a more intuitive and trustworthy user experience that meets the needs of the Scape community.</p>
             <p>This involved developing a UI with a higher contrast color palette than previous iterations, as seen below.</p>
             
-            <img src="../img/scapefinal.png" alt="Final Solution" class="case-study-image">
+            <div class="image-hover-wrapper" onclick="openModal(this)">
+                <img src="../img/scapefinal.png" alt="Final Solution" class="case-study-image">
+                <div class="image-overlay-hint">Click to expand</div>
+            </div>
+
+            <div id="imageModal-final" class="image-modal" onclick="closeModal(this)">
+                <div class="modal-content" onclick="event.stopPropagation()">
+                    <span class="modal-close" onclick="closeModal()">&times;</span>
+                    <img src="../img/scapefinal.png" alt="Final Solution">
+                </div>
+            </div>
         </div>
     </section>
 
@@ -159,13 +213,13 @@
                 
                 <a href="/project3/" class="related-project-card">
                     <div class="project-image">
-                        <img src="../img/qiflowhero.png" alt="Qi Flow App">
+                        <img src="../img/brightpathhero.png" alt="BrightPath App">
                         <div class="project-overlay">
                             <span class="view-project">View Case Study →</span>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">Qi Flow App</h3>
+                        <h3 class="project-title">BrightPath by Xero</h3>
                     </div>
                 </a>
                 
@@ -212,6 +266,7 @@
 <p>&copy; <script>document.write(new Date().getFullYear())</script> Alice Beyer. All rights reserved.</p>        </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         function toggleNav() {
             const navLinks = document.querySelector('.nav-links');
@@ -226,6 +281,102 @@
                 navbar.classList.add('scrolled');
             } else {
                 navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Pie chart for Reported Issues
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('issuesChart');
+            if (ctx) {
+                new Chart(ctx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Maintenance Problems', 'Cost Issues', 'Cleanliness', 'Layout'],
+                        datasets: [{
+                            data: [3, 2, 1, 1],
+                            backgroundColor: [
+                                '#041b81',
+                                '#6b8f71',
+                                '#4b5563',
+                                '#e2e8f0'
+                            ],
+                            borderColor: '#f9fafb',
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        interaction: {
+                            mode: 'none'
+                        },
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                                labels: {
+                                    font: {
+                                        family: '"DM Sans", sans-serif',
+                                        size: 13,
+                                        weight: 500
+                                    },
+                                    color: '#1f2933',
+                                    padding: 15
+                                }
+                            },
+                            title: {
+                                display: true,
+                                text: 'Reported Issues Within Scape La Trobe',
+                                font: {
+                                    family: '"Fraunces", serif',
+                                    size: 18,
+                                    weight: 600
+                                },
+                                color: '#1f2933',
+                                padding: 20
+                            }
+                        }
+                    }
+                });
+            }
+        });
+
+        // Modal functions for image expansion
+        function openModal(element) {
+            // Find the next sibling modal
+            let modal = element.nextElementSibling;
+            while (modal && !modal.classList.contains('image-modal')) {
+                modal = modal.nextElementSibling;
+            }
+            if (modal) {
+                modal.classList.add('open');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeModal(element) {
+            // If called with an element, find its modal
+            if (element) {
+                let modal = element;
+                while (modal && !modal.classList.contains('image-modal')) {
+                    modal = modal.parentElement;
+                }
+                if (modal) {
+                    modal.classList.remove('open');
+                    document.body.style.overflow = 'auto';
+                }
+            } else {
+                // Close all open modals
+                document.querySelectorAll('.image-modal.open').forEach(modal => {
+                    modal.classList.remove('open');
+                });
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Close modal when pressing Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
             }
         });
     </script>
