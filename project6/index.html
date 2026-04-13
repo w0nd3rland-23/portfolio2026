@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corsa Electrical – Alice Beyer</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="project6-page">
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="navbar-brand">
+                <a href="/">Alice Beyer</a>
+            </div>
+            <button class="toggle-button" onclick="toggleNav()" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="/about/">About</a></li>
+                    <li><a href="/portfolio/">Work</a></li>
+                    <li><a href="/contact/" class="contact-btn">Get in Touch</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="breadcrumb-container">
+            <nav class="breadcrumb-nav">
+                <a href="/portfolio/">Portfolio</a>
+                <span>›</span>
+                <span>Corsa Electrical Contractors</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Hero -->
+    <section class="case-study-hero">
+        <div class="case-study-hero-container">
+
+            <img src="../img/corsahero.png" alt="Corsa Electrical Contractors logo" class="case-study-hero-image">
+
+            <div class="case-study-title-section">
+                <h1 class="case-study-title">Corsa Electrical Contractors</h1>
+                <p class="case-study-subtitle">Brand Identity for a Melbourne Electrical Contractor</p>
+
+                <div class="case-study-meta">
+                    <div class="meta-item">
+                        <div class="meta-label">Timeline</div>
+                        <div class="meta-value">Nov 2025</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Role</div>
+                        <div class="meta-value">Solo Designer</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Type</div>
+                        <div class="meta-value">Brand Identity</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Deliverables</div>
+                        <div class="meta-value">Logo · Identity · Website · Cards</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Content -->
+    <section class="case-study-content-section">
+        <div class="case-study-content">
+
+            <!-- Overview -->
+            <h2>Project Overview</h2>
+            <p>Corsa Electrical Contractors is a Melbourne-based electrical services company seeking to establish a professional and distinctive brand presence in the local trade scene. As the sole designer on this project, I was responsible for the full brand identity including initial strategy through to logo design, visual identity system, website design, and business cards.</p>
+            <p>The goal was to create a brand that felt modern, trustworthy, and confident, reflecting the quality workmanship Corsa Electrical Contractors delivers to its residential and commercial clients.</p>
+
+           
+
+            <!-- Logo Design -->
+            <h2>Logo Design</h2>
+            <p>The Corsa Electrical Contractors wordmark was designed to communicate trust and confidence. The sharp, geometric construction of the letters reflects precision and professionalism.</p>
+            <p>The accompanying circular badge mark works independently for small-scale applications such as embroidered uniforms, vehicle decals, and social media profile pictures, where the full wordmark would lose legibility.</p>
+
+            <!-- Logo variants -->
+            <p><strong>Logo Variants:</strong></p>
+            <div class="logo-gallery">
+                <figure class="gallery-item">
+                    <div class="image-hover-wrapper no-hover" onclick="openModal(this)" data-image-src="../img/Corsa PNG Black.png" data-image-alt="Corsa Electrical primary logo">
+                        <img src="../img/Corsa PNG Black.png" alt="Corsa Electrical primary logo">
+                        <span class="image-overlay-hint">View larger</span>
+                    </div>
+                    <figcaption>Primary logo</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <div class="image-hover-wrapper no-hover" onclick="openModal(this)" data-image-src="../img/Corsa JPG Black-11.jpg" data-image-alt="Corsa Electrical 11 logo">
+                        <img src="../img/Corsa JPG Black-11.jpg" alt="Corsa Electrical 11 logo">
+                        <span class="image-overlay-hint">View larger</span>
+                    </div>
+                    <figcaption>Corsa Navy Logo</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <div class="image-hover-wrapper no-hover" onclick="openModal(this)" data-image-src="../img/Simple Corsa Round.png" data-image-alt="Corsa Electrical badge logo">
+                        <img src="../img/Simple Corsa Round.png" alt="Corsa Electrical badge logo" class="badge-logo">
+                        <span class="image-overlay-hint">View larger</span>
+                    </div>
+                    <figcaption>Simple Corsa round badge</figcaption>
+                </figure>
+            </div>
+            
+            <!-- Visual Identity -->
+            <h2>Visual Identity System</h2>
+            <p>The colour palette centres on a deep navy and warm yellow-gold, chosen to feel professional and premium.Typography pairs Montserrat for headings with Argentum Sans for body copy, balancing character with legibility across both print and digital formats.</p>
+
+            <div class="palette-panel">
+                <div class="palette-intro">
+                </div>
+                <div class="palette-grid">
+                    <div class="palette-swatch palette-navy">
+                        <span class="swatch-name">Corsa Navy</span>
+                        <span class="swatch-hex">#0D1547</span>
+                    </div>
+                    <div class="palette-swatch palette-gold">
+                        <span class="swatch-name">Corsa Gold</span>
+                        <span class="swatch-hex">#F5A623</span>
+                    </div>
+                    <div class="palette-swatch palette-offwhite">
+                        <span class="swatch-name">Off-White</span>
+                        <span class="swatch-hex">#F5F0E8</span>
+                    </div>
+                    <div class="palette-swatch palette-deepnavy">
+                        <span class="swatch-name">Navy Deep</span>
+                        <span class="swatch-hex">#080E36</span>
+                    </div>
+                </div>
+            </div>
+
+        
+            <!-- Website -->
+            <h2>Website Design</h2>
+            <p>The website was built using Claude Code, with a mobile-first approach reflecting the reality that many clients would be searching for an electrician on their phone. The design prioritises fast access to contact information, a clear overview of services, and service areas. Key pages include the homepage, an about page highlighting Adam’s experience, and a contact page with an enquiry form.</p>
+
+        
+               
+            <p><strong>Website Design</strong></p>
+
+            <div class="web-design-gallery">
+                <figure class="gallery-item">
+                    <div class="image-hover-wrapper" onclick="openModal(this)" data-image-src="../img/corsaweb1.png" data-image-alt="Corsa Electrical website homepage design">
+                        <img src="../img/corsaweb1.png" alt="Corsa Electrical website homepage design">
+                        <span class="image-overlay-hint">View larger</span>
+                    </div>
+                    <figcaption>Homepage design</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <div class="image-hover-wrapper" onclick="openModal(this)" data-image-src="../img/corsaweb2.png" data-image-alt="Corsa Electrical website services/contact design">
+                        <img src="../img/corsaweb2.png" alt="Corsa Electrical website services/contact design">
+                        <span class="image-overlay-hint">View larger</span>
+                    </div>
+                    <figcaption>Contact page design</figcaption>
+                </figure>
+            </div>
+
+            <p><strong>Mobile Website Design</strong></p>
+            <div class="web-design-gallery mobile-screens">
+                <figure class="gallery-item">
+                    <div class="image-hover-wrapper" onclick="openModal(this)" data-image-src="../img/corsamobile%20(1).png" data-image-alt="Corsa Electrical mobile screen 1">
+                        <img src="../img/corsamobile%20(1).png" alt="Corsa Electrical mobile screen 1">
+                        <span class="image-overlay-hint">View larger</span>
+                    </div>
+                    <figcaption>Mobile screen 1</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <div class="image-hover-wrapper" onclick="openModal(this)" data-image-src="../img/corsamobile%20(2).png" data-image-alt="Corsa Electrical mobile screen 2">
+                        <img src="../img/corsamobile%20(2).png" alt="Corsa Electrical mobile screen 2">
+                        <span class="image-overlay-hint">View larger</span>
+                    </div>
+                    <figcaption>Mobile screen 2</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <div class="image-hover-wrapper" onclick="openModal(this)" data-image-src="../img/corsamobile%20(3).png" data-image-alt="Corsa Electrical mobile screen 3">
+                        <img src="../img/corsamobile%20(3).png" alt="Corsa Electrical mobile screen 3">
+                        <span class="image-overlay-hint">View larger</span>
+                    </div>
+                    <figcaption>Mobile screen 3</figcaption>
+                </figure>
+            </div>
+            <div class="website-link-row">
+                <a href="https://corsaelectrical.com.au" target="_blank" rel="noopener noreferrer" class="btn-primary">Visit corsaelectrical.com.au</a>
+                <p class="website-link-copy">Live site designed to convert Melbourne homeowners and tradies with clear service pages, trust signals, and fast contact access.</p>
+            </div>
+
+            <!-- Marketing Materials -->
+            <h2>Marketing Materials</h2>
+ <p>To extend the brand into the physical world, I designed business cards that help to build trust in the Corsa brand. The card uses a split-panel layout with a clean white face to emphasise contact information, and back design to emphasise the Corsa logo. </p>
+            <div class="business-card-gallery">
+                <figure class="gallery-item">
+                    <div class="image-hover-wrapper" onclick="openModal(this)" data-image-src="../img/Corsa Card FINAL-02.jpg" data-image-alt="Corsa Electrical business card front">
+                        <img src="../img/Corsa Card FINAL-02.jpg" alt="Corsa Electrical business card front">
+                        <span class="image-overlay-hint">View larger</span>
+                    </div>
+                    <figcaption>Business card front</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <div class="image-hover-wrapper" onclick="openModal(this)" data-image-src="../img/Corsa Card FINAL-03.jpg" data-image-alt="Corsa Electrical business card back">
+                        <img src="../img/Corsa Card FINAL-03.jpg" alt="Corsa Electrical business card back">
+                        <span class="image-overlay-hint">View larger</span>
+                    </div>
+                    <figcaption>Business card back</figcaption>
+                </figure>
+            </div>
+
+            <div id="galleryModal" class="image-modal" onclick="closeModal()">
+                <div class="modal-content" onclick="event.stopPropagation()">
+                    <span class="modal-close" onclick="closeModal()">&times;</span>
+                    <img id="galleryModalImage" src="" alt="">
+                </div>
+            </div>
+
+         
+            <!-- Conclusion -->
+            <h2>Conclusion</h2>
+            <p>The Corsa Electrical brand identity gives the business a confident, professional, and distinctive visual presence across every touchpoint. </p>
+<p>As a solo designer, I was responsible for the entire project lifecycle, from initial research and strategy through to final design and delivery. The result is a cohesive brand system that helps Corsa Electrical Contractors stand out in a competitive market and build trust with their target audience.</p>
+        </div>
+    </section>
+
+    <!-- Related Projects -->
+    <section class="related-projects">
+        <div class="related-projects-container">
+            <div class="section-label">More Work</div>
+            <h2 class="section-title">Other Projects</h2>
+
+            <div class="related-projects-grid">
+                <a href="/project1/" class="related-project-card">
+                    <div class="project-image">
+                        <img src="../img/scapehero.png" alt="Scape Portal App">
+                        <div class="project-overlay"><span class="view-project">View Case Study →</span></div>
+                    </div>
+                    <div class="project-info"><h3 class="project-title">Scape Portal App</h3></div>
+                </a>
+                <a href="/project2/" class="related-project-card">
+                    <div class="project-image">
+                        <img src="../img/jotsheroimage.png" alt="Jots App">
+                        <div class="project-overlay"><span class="view-project">View Case Study →</span></div>
+                    </div>
+                    <div class="project-info"><h3 class="project-title">Jots App</h3></div>
+                </a>
+                <a href="/project3/" class="related-project-card">
+                    <div class="project-image">
+                        <img src="../img/qiflowhero.png" alt="Qi Flow App">
+                        <div class="project-overlay"><span class="view-project">View Case Study →</span></div>
+                    </div>
+                    <div class="project-info"><h3 class="project-title">Qi Flow App</h3></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-brand">Alice Beyer</div>
+                <p class="footer-location">Digital Designer based in Melbourne</p>
+            </div>
+            <div class="footer-right">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/alice-beyer-016377230/" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.225 0H1.775C.795 0 0 .795 0 1.775v20.45C0 23.205.795 24 1.775 24h20.45C23.205 24 24 23.205 24 22.225V1.775C24 .795 23.205 0 22.225 0zM7.1 20.452H3.75V9h3.35v11.452zm-1.675-13.064c-1.069 0-1.725-.735-1.725-1.65 0-.933.675-1.65 1.725-1.65s1.725.717 1.725 1.65c0 .915-.675 1.65-1.725 1.65zm15.477 13.064h-3.35v-5.5c0-1.314-.025-3.014-1.835-3.014-1.835 0-2.115 1.43-2.115 2.92v5.594h-3.35V9h3.215v1.57h.045c.445-.84 1.537-1.73 3.17-1.73 3.395 0 4.025 2.234 4.025 5.128v5.482h-.002z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/alicebeyerdesign/" target="_blank" class="social-link" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> Alice Beyer. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../javascript.js"></script>
+</body>
+</html>

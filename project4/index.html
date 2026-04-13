@@ -45,7 +45,7 @@
     <!-- Case Study Hero -->
     <section class="case-study-hero">
         <div class="case-study-hero-container">
-            <img src="../img/tempmaph1.jpg" alt="Museum of Australian Photography Sculpture Trail" class="case-study-hero-image">
+            <img src="../img/sculpturetrail.png" alt="Museum of Australian Photography Sculpture Trail" class="case-study-hero-image">
             
             <div class="case-study-title-section">
                 <h1 class="case-study-title">Museum of Australian Photography Sculpture Trail</h1>
@@ -75,23 +75,41 @@
             <h3>Overview</h3>
             <p>This project was a voluntary illustrative design initiative I undertook for the Museum of Australian Photography's education program. The brief required me to create a fun, engaging, and audience-appropriate booklet for children to complete while exploring the Wheeler's Hill Library and Arts precinct. The booklet was designed to be printed in-house and offered for free at reception desks and during various children's programs.</p>
             
-            <img src="../img/maphfinal1.png" alt="Booklet cover design" class="case-study-image">
-            <img src="../img/maphfinal2.png" alt="Booklet interior spread 1" class="case-study-image">
-            <img src="../img/maphfinal3.png" alt="Booklet interior spread 2" class="case-study-image">
+            <div class="image-hover-wrapper" onclick="openModal(this)" data-image-src="../img/maphfinal1.png" data-image-alt="Booklet cover design">
+                <img src="../img/maphfinal1.png" alt="Booklet cover design" class="case-study-image">
+                <span class="image-overlay-hint">View larger</span>
+            </div>
+            <div class="image-hover-wrapper" onclick="openModal(this)" data-image-src="../img/maphfinal2.png" data-image-alt="Booklet interior spread 1">
+                <img src="../img/maphfinal2.png" alt="Booklet interior spread 1" class="case-study-image">
+                <span class="image-overlay-hint">View larger</span>
+            </div>
+            <div class="image-hover-wrapper" onclick="openModal(this)" data-image-src="../img/maphfinal3.png" data-image-alt="Booklet interior spread 2">
+                <img src="../img/maphfinal3.png" alt="Booklet interior spread 2" class="case-study-image">
+                <span class="image-overlay-hint">View larger</span>
+            </div>
             
             <h3>Background</h3>
             <p>In developing this project, I conducted research on similar educational programs at galleries such as the National Gallery of Victoria (NGV) and the Heide Museum of Modern Art. This research provided valuable insights into effective educational strategies and design elements that engage children.</p>
             <p>To enhance visibility and maintain the children's focus on activities, I adopted a flat design style for the booklet. This approach not only ensured clarity but also fostered an enjoyable visual experience, making learning interactive and entertaining.</p>
             
-            <img src="../img/maphinspo.png" alt="Design inspiration and flat design style examples" class="case-study-image">
+            <div class="image-hover-wrapper" onclick="openModal(this)" data-image-src="../img/maphinspo.png" data-image-alt="Design inspiration and flat design style examples">
+                <img src="../img/maphinspo.png" alt="Design inspiration and flat design style examples" class="case-study-image">
+                <span class="image-overlay-hint">View larger</span>
+            </div>
 
             <h3>Development</h3>
             <p>This project allowed me to experiment with Adobe Illustrator's new AI vector tool, which I utilised to create basic shapes representing children and natural elements in the background. I customised these elements to align with the overall design aesthetic and the specific requirements outlined in the project brief.</p>
             <p>Collaboration was a crucial aspect of this project. I worked closely with MAPh's educational coordinator, Ingrid Wood, to ensure that the content aligned with the educational goals of the museum. Additionally, I sought advice from Fiona Arbab, a visiting master's student specialising in early childhood education. This collaboration strengthened the project by incorporating experienced insights into child engagement.</p>
             <p>The initial iterations of the booklet required further refinement to ensure that activities were not only clear but also age-appropriate. Feedback from Ingrid and Fiona led to several design iterations, each focusing on enhancing clarity and fun.</p>
             
-            <img src="../img/maphbeforeandafter1.png" alt="Before and after comparison 1" class="case-study-image">
-            <img src="../img/maphbeforeandafter2.png" alt="Before and after comparison 2" class="case-study-image">
+            <div class="image-hover-wrapper" onclick="openModal(this)" data-image-src="../img/maphbeforeandafter1.png" data-image-alt="Before and after comparison 1">
+                <img src="../img/maphbeforeandafter1.png" alt="Before and after comparison 1" class="case-study-image">
+                <span class="image-overlay-hint">View larger</span>
+            </div>
+            <div class="image-hover-wrapper" onclick="openModal(this)" data-image-src="../img/maphbeforeandafter2.png" data-image-alt="Before and after comparison 2">
+                <img src="../img/maphbeforeandafter2.png" alt="Before and after comparison 2" class="case-study-image">
+                <span class="image-overlay-hint">View larger</span>
+            </div>
 
             <h3>Conclusion</h3>
             <p>The MAPh Children's Sculpture Trail booklet was an enjoyable and fun project for me to be a part of. Through collaboration with the education department, and continued iteration on the booklet design, I was able to create an engaging resource that supports the museum's educational initiatives. As part of my roles at the gallery, I have been able to see children engaging with the booklet, helping them to fully explore the gallery and sculpture garden. Seeing the impact the booklet has had so far has been highly rewarding for me.</p>
@@ -100,6 +118,12 @@
 
     <!-- Related Projects -->
     <section class="related-projects">
+        <div id="galleryModal" class="image-modal" onclick="closeModal()">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <span class="modal-close" onclick="closeModal()">&times;</span>
+                <img id="galleryModalImage" src="" alt="">
+            </div>
+        </div>
         <div class="related-projects-container">
             <div class="section-label">More Work</div>
             <h2 class="section-title">Other Projects</h2>
@@ -172,6 +196,7 @@
 <p>&copy; <script>document.write(new Date().getFullYear())</script> Alice Beyer. All rights reserved.</p>        </div>
     </footer>
 
+    <script src="../javascript.js"></script>
     <script>
         function toggleNav() {
             const navLinks = document.querySelector('.nav-links');

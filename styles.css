@@ -187,8 +187,7 @@ img {
 
 /* Hero Section */
 .hero-section {
-    min-height: 100vh;
-    padding: 7rem 2rem 3rem;
+    padding: 7rem 2rem 2.5rem;
     position: relative;
     overflow: hidden;
 }
@@ -376,7 +375,7 @@ img {
 
 /* Projects Section */
 .projects-section {
-    padding: 4.5rem 2rem;
+    padding: 3rem 2rem 4rem;
     background-color: #fff;
 }
 
@@ -1097,6 +1096,18 @@ img {
     color: var(--primary-slate);
 }
 
+.case-study-content h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 2.4rem 0 1rem;
+    color: var(--primary-charcoal);
+}
+
+.case-study-content p {
+    margin: 1rem 0 1.4rem;
+    line-height: 1.8;
+}
+
 .case-study-content ul {
     margin: 1.2rem 0;
     padding-left: 1.2rem;
@@ -1105,6 +1116,191 @@ img {
 .case-study-content li {
     margin-bottom: 0.6rem;
     line-height: 1.7;
+}
+
+.palette-panel {
+    max-width: 640px;
+    width: 100%;
+    margin: 1.5rem auto 2rem;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.palette-intro {
+    margin-bottom: 1rem;
+}
+
+.palette-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(120px, 1fr));
+    gap: 1rem;
+}
+
+.website-link-card {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    max-width: 640px;
+    margin: 1.5rem 0 2rem;
+    padding: 1.5rem 1.75rem;
+    background: linear-gradient(135deg, #0d1547 0%, #142a58 100%);
+    border-radius: 24px;
+    color: #fff;
+}
+
+.website-link-card .btn-primary {
+    background-color: #f5a623;
+    color: #111827;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+.website-link-card .btn-primary:hover {
+    background-color: #e79b1c;
+}
+
+.website-link-copy {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 460px;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.website-link-row {
+    margin-bottom: 1rem;
+}
+
+.website-link-row .website-link-copy {
+    margin-top: 0.65rem;
+    margin-bottom: 0;
+}
+
+.website-link-row + h2 {
+    margin-top: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .website-link-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .website-link-card .btn-primary {
+        width: 100%;
+        text-align: center;
+    }
+} 
+
+.project6-page .case-study-hero-image {
+    border-radius: 20px;
+}
+
+.project6-page .palette-panel {
+    max-width: 640px;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.project6-page .case-study-content {
+    max-width: 640px;
+}
+
+.project6-page .case-study-image {
+    margin: 2rem 0;
+    border-radius: 0 !important;
+}
+
+.project6-page .logo-gallery,
+.project6-page .business-card-gallery {
+    max-width: 640px;
+    margin: 0 auto 2rem;
+    gap: 1rem;
+}
+
+.project6-page .gallery-item img {
+    border-radius: 0 !important;
+}
+
+.project6-page .badge-logo {
+    mix-blend-mode: multiply;
+    background: transparent;
+}
+
+
+.palette-swatch {
+    min-height: 160px;
+    border-radius: 18px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.palette-swatch .swatch-name {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+}
+
+.palette-swatch .swatch-hex {
+    font-size: 0.85rem;
+    opacity: 0.85;
+}
+
+.palette-navy {
+    background: linear-gradient(180deg, #142A58 0%, #0D1547 100%);
+}
+
+.palette-gold {
+    background: linear-gradient(180deg, #F7B74E 0%, #F5A623 100%);
+    color: var(--primary-charcoal);
+}
+
+.palette-offwhite {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F5F0E8 100%);
+    color: var(--primary-charcoal);
+    box-shadow: inset 0 0 0 1px rgba(17, 24, 39, 0.08);
+}
+
+.palette-deepnavy {
+    background: linear-gradient(180deg, #0B0F2A 0%, #080E36 100%);
+}
+
+.logo-gallery,
+.business-card-gallery,
+.web-design-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.4rem;
+}
+
+.web-design-gallery.mobile-screens {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+    display: block;
+}
+
+.gallery-item figcaption {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: var(--primary-charcoal);
+    font-weight: 600;
 }
 
 .case-study-image {
@@ -1122,12 +1318,23 @@ img {
     position: relative;
 }
 
+.image-hover-wrapper img,
 .image-hover-wrapper .case-study-image {
     transition: var(--transition-smooth);
 }
 
+.image-hover-wrapper:hover img,
 .image-hover-wrapper:hover .case-study-image {
     transform: scale(1.02);
+}
+
+.image-hover-wrapper.no-hover:hover img,
+.image-hover-wrapper.no-hover:hover .case-study-image {
+    transform: none;
+}
+
+.image-hover-wrapper.no-hover .image-overlay-hint {
+    display: none;
 }
 
 .image-overlay-hint {
@@ -1156,7 +1363,7 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: white;
+    background-color: rgba(4, 13, 36, 0.94);
     z-index: 5000;
     padding: 2rem;
     overflow: auto;
@@ -1198,12 +1405,12 @@ img {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    color: white;
+    color: #07121c;
     font-size: 2.5rem;
     font-weight: 300;
     cursor: pointer;
     transition: var(--transition-smooth);
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.92);
     width: 50px;
     height: 50px;
     display: flex;
@@ -1620,6 +1827,15 @@ img {
     .related-projects-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    
+    .palette-grid {
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+    }
+    
+    .logo-gallery,
+    .business-card-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 @media (max-width: 768px) {
@@ -1687,6 +1903,16 @@ img {
     .projects-grid {
         grid-template-columns: 1fr;
         gap: 1.6rem;
+    }
+
+    .palette-grid,
+    .logo-gallery,
+    .business-card-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .web-design-gallery.mobile-screens {
+        grid-template-columns: 1fr;
     }
     
     .footer-content {
