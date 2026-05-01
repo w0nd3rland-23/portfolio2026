@@ -70,3 +70,36 @@ function closeModal(element) {
     }
     document.body.style.overflow = 'auto';
 }
+
+// Carousel functionality
+let currentSlideIndex = 0;
+
+function moveSlide(direction) {
+    const slides = document.querySelectorAll('.carousel-slide');
+    const indicators = document.querySelectorAll('.indicator');
+
+    if (slides.length === 0) return;
+
+    slides[currentSlideIndex].classList.remove('active');
+    indicators[currentSlideIndex].classList.remove('active');
+
+    currentSlideIndex = (currentSlideIndex + direction + slides.length) % slides.length;
+
+    slides[currentSlideIndex].classList.add('active');
+    indicators[currentSlideIndex].classList.add('active');
+}
+
+function currentSlide(index) {
+    const slides = document.querySelectorAll('.carousel-slide');
+    const indicators = document.querySelectorAll('.indicator');
+
+    if (slides.length === 0 || index < 0 || index >= slides.length) return;
+
+    slides[currentSlideIndex].classList.remove('active');
+    indicators[currentSlideIndex].classList.remove('active');
+
+    currentSlideIndex = index;
+
+    slides[currentSlideIndex].classList.add('active');
+    indicators[currentSlideIndex].classList.add('active');
+}

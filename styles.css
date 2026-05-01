@@ -1612,6 +1612,17 @@ img {
     color: var(--neutral-700);
 }
 
+.personas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2.4rem 0;
+}
+
+.personas-grid .image-hover-wrapper {
+    margin: 0;
+}
+
 .accessibility-boxes {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
@@ -2008,4 +2019,104 @@ img {
     .cta-title {
         font-size: 1.4rem;
     }
+}
+
+/* Carousel Styles */
+.carousel-container {
+    position: relative;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 70px; /* Add padding for the arrows */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-slide.active {
+    display: block;
+    opacity: 1;
+}
+
+.carousel-slide .image-hover-wrapper {
+    margin: 0;
+    border-radius: 0;
+}
+
+.carousel-slide .case-study-image {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 0;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--primary-charcoal);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: var(--transition-smooth);
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-btn.prev {
+    left: -25px; /* Position outside the left edge */
+}
+
+.carousel-btn.next {
+    right: -25px; /* Position outside the right edge */
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.indicator.active {
+    background: var(--accent-primary);
+    border-color: var(--accent-primary);
+    transform: scale(1.2);
+}
+
+.indicator:hover {
+    background: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 1);
 }

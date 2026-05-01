@@ -90,172 +90,139 @@
     <!-- Case Study Content -->
     <section class="case-study-content-section">
         <div class="case-study-content">
-            <h3>Helping Entrepreneurs Take Their First Step</h3>
-            <p>BrightPath was developed in response to a design brief from Xero, the accounting software platform. The app targets aspiring entrepreneurs in the earliest stages of business creation — a group that is often underserved, particularly those with accessibility needs.</p>
-            <p>Taking a mobile-first approach, BrightPath offers guided learning modules across key business topics, with quizzes and progress-tracking built in. The goal: make entrepreneurship education inclusive, clear, and confidence-building.</p>
+            <h3>Overview</h3>
+            <p>BrightPath is a mobile-first learning app designed for aspiring entrepreneurs at the very earliest stages of starting a business, people who are often underserved by existing tools, particularly those with accessibility needs. The project was developed in response to a design brief from Xero, the cloud-based accounting platform used by over 4.2 million small businesses worldwide.</p>
+            <p>The app offers guided learning modules across key business topics, with progress tracking and quizzes built in. The goal was to make entrepreneurship education inclusive, confidence-building, and genuinely usable for people with disabilities, not as an afterthought, but from the ground up.</p>
+            <div class="image-hover-wrapper" onclick="openModal(this)" data-image-src="../img/brightpathhero.png" data-image-alt="BrightPath App Hero Screen">
+                <img src="../img/brightpathhero.png" alt="BrightPath App Hero Screen" class="case-study-image">
+                <span class="image-overlay-hint">View larger</span>
+            </div>
 
-            <div class="stats-grid">
-                <div class="stat-box">
-                    <div class="stat-number">12</div>
-                    <div class="stat-label">Weeks of Development</div>
+            <h3>The Brief</h3>
+            <p>Xero came to us with a clear priority: small businesses are the backbone of OECD economies, making up 90% of all businesses, and yet the tools available to people just starting out often assume a baseline of knowledge and ability that many users don't have. Alongside Xero, we worked with IgniteAbility, an SSI social enterprise that provides free business mentoring for people with disabilities.</p>
+            <p>IgniteAbility gave us a critical insight early on: to access their program, participants need to already have a clear business idea. That left a real gap for people still in the ideation phase, or those who faced systemic, financial, or accessibility barriers before they even got started. BrightPath was designed to fill that gap.</p>
+
+            <h3>Research</h3>
+            <h4>Understanding the users</h4>
+            <p>I developed three user personas to anchor the design, each reflecting a different disability or cognitive condition likely to affect how someone engages with a learning app.</p>
+            <div class="personas-grid">
+                <div class="image-hover-wrapper" onclick="openModal(this)" data-image-src="../img/Persona1.png" data-image-alt="Alex Thompson - Aspiring Entrepreneur with ADHD">
+                    <img src="../img/Persona1.png" alt="Alex Thompson - Aspiring Entrepreneur with ADHD" class="case-study-image">
+                    <span class="image-overlay-hint">View larger</span>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-number">2</div>
-                    <div class="stat-label">Xero Industry Partners</div>
+                <div class="image-hover-wrapper" onclick="openModal(this)" data-image-src="../img/Persona2.png" data-image-alt="Jordan Rivera - Entrepreneur with Low Vision">
+                    <img src="../img/Persona2.png" alt="Jordan Rivera - Entrepreneur with Low Vision" class="case-study-image">
+                    <span class="image-overlay-hint">View larger</span>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-number">WCAG</div>
-                    <div class="stat-label">2.0 Accessibility Standard</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">100%</div>
-                    <div class="stat-label">User Validation</div>
+                <div class="image-hover-wrapper" onclick="openModal(this)" data-image-src="../img/Persona3.png" data-image-alt="Taylor Chen - Entrepreneur with Autism Spectrum Traits">
+                    <img src="../img/Persona3.png" alt="Taylor Chen - Entrepreneur with Autism Spectrum Traits" class="case-study-image">
+                    <span class="image-overlay-hint">View larger</span>
                 </div>
             </div>
+            
+            <p>The primary focus that emerged from both research and mentor feedback was designing for ADHD. Key challenges for ADHD users include filtering information by importance, maintaining motivation, and working with cluttered or inconsistent interfaces. The research pointed clearly toward a few principles:</p>
+            <ul>
+                <li>Use plenty of white space and keep layouts simple</li>
+                <li>Group related elements and avoid unnecessary animations or pop-ups</li>
+                <li>Keep content concise and digestible</li>
+                <li>Use gamification as an external motivation tool, through points, progress indicators, and rewards</li>
+                <li>Provide tips and reminders to support users through challenging content</li>
+            </ul>
+
+            <h4>Accessibility framework: WCAG 2.0</h4>
+            <p>The brief required the app to meet WCAG 2.0 AA standards, the industry benchmark for accessible digital products. This meant designing to four core principles, known as POUR: Perceivable, Operable, Understandable, and Robust.</p>
+            <p>In practice, this shaped everything from colour contrast ratios (4.5:1 for text, 3:1 for icons) to minimum touch target sizes, font sizing, screen reader compatibility, and ensuring the layout could scale up to 200% without breaking. I made a point of designing with these constraints from the start rather than retrofitting them later, something that required a much deeper understanding of Figma's auto layout than I'd previously used.</p>
 
             <h3>Key Features</h3>
-            <p>Three core feature areas shaped the app experience, each informed by research into ADHD-supportive design patterns and accessibility frameworks.</p>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">📚</div>
-                    <h4>Learning Modules</h4>
-                    <p>Multimedia-rich guides covering key business topics, designed to be digestible and self-paced, with content kept concise for users with ADHD.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔭</div>
-                    <h4>The Observatory</h4>
-                    <p>A central hub that saves key information from completed modules, allowing users to build an overview of their business knowledge and see their visible progress.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🎮</div>
-                    <h4>Gamification & Quizzes</h4>
-                    <p>Progress tracking and quiz-based engagement reward users for completing content — keeping motivation high without cluttering the interface.</p>
-                </div>
+            <div class="image-hover-wrapper" onclick="openModal(this)" data-image-src="../img/brightpath-learning.png" data-image-alt="BrightPath Learning Module Screen">
+                <img src="../img/brightpath-learning.png" alt="BrightPath Learning Module Screen" class="case-study-image">
+                <span class="image-overlay-hint">View larger</span>
+            </div>
+            <p><strong>Learning Modules</strong> — Multimedia-rich guides covering key business topics, kept concise and self-paced. Content length and structure were informed directly by ADHD design research, prioritising short, digestible segments over long-form reading.</p>
+            <div class="video-embed">
+                <iframe width="100%" height="450" src="https://www.youtube.com/embed/zdxySK2xHa4" title="BrightPath Learning Module Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p><strong>The Observatory</strong> — The feature I'm most proud of, and the one that went through the most iteration. The Observatory is a central hub that saves key information from completed modules, giving users a growing overview of their business knowledge. It's both a progress tracker and a practical tool. As users complete courses, they build up a personalised summary they can use as the foundation of a business plan.</p>
+            <div class="video-embed">
+                <iframe width="100%" height="450" src="https://www.youtube.com/embed/FsfomU0uQoQ" title="BrightPath Observatory Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p><strong>Gamification and Quizzes</strong> — Progress tracking and quiz-based rewards keep motivation high without cluttering the interface. This was deliberately restrained, because gamification that creates noise defeats the purpose when your primary users have ADHD.</p>
+
+            <h3>User Stories</h3>
+            <ul>
+                <li>As an easily distracted learner, I want short, digestible content so that I can stay focused and complete learning tasks without feeling overwhelmed.</li>
+                <li>As someone with ADHD, I want step-by-step instructions with clear visuals so that I can follow along without getting confused or frustrated.</li>
+                <li>As someone unfamiliar with business ownership, I want a user-friendly dashboard so that I can navigate the app without feeling lost.</li>
+                <li>As someone trying to shift careers, I want realistic scenarios or examples so that I can understand how business knowledge applies to my goals.</li>
+            <h3>Feedback and Iteration</h3>
+            <p>Weekly mentor sessions with Rusaila Bazlamit kept the project on track, with feedback focused on maintaining accessibility as the core differentiator. Client presentations in week 9 were particularly valuable, with Xero's Bronwyn Rees and Bobby Ly providing direct input on the Observatory concept and onboarding flow.</p>
+            <p>The most significant iteration came around accessibility settings placement. Early feedback suggested burying them in settings to avoid cluttering the onboarding experience. But Bobby later noted that modern software like Xbox now surfaces accessibility options during onboarding, prompting me to rethink the flow and prioritise accessibility from the first screen.</p>
+            <div class="image-hover-wrapper" onclick="openModal(this)" data-image-src="../img/brightpathuserflowonboardingiteration1.png" data-image-alt="Onboarding User Flow Iteration 1">
+                <img src="../img/brightpathuserflowonboardingiteration1.png" alt="Onboarding User Flow Iteration 1" class="case-study-image">
+                <span class="image-overlay-hint">View larger</span>
             </div>
 
-            <img src="../img/brightpath-learning.png" alt="BrightPath Learning Module Screen" class="case-study-image">
-
-            <h3>Design Process</h3>
-            <p>The project ran across 12 weeks using agile methods — short sprints, regular reflection, and continuous feedback from both mentor Rusaila Bazlamit and Xero representatives Bronwyn Rees (Lead Product Designer) and Bobby Ly (Accessibility Analyst). A key challenge was balancing scope. Early iterations tried to do too much at once, leading to a pivot: focus on fully realising the learning module user flow and Observatory feature rather than partially building the whole app.</p>
-            
-            <div class="design-timeline">
-                <div class="timeline-card">
-                    <div class="timeline-week">Week 6</div>
-                    <h4>Accessibility First</h4>
-                    <p>Mentor flagged the design was becoming generic. Refocused on WCAG 2.0 compliance and distinctive accessibility considerations.</p>
+            <h4>Design Progress</h4>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-slide active">
+                        <div class="image-hover-wrapper" onclick="openModal(this)" data-image-src="../img/prog1brightpath.png" data-image-alt="BrightPath Design Progress 1">
+                            <img src="../img/prog1brightpath.png" alt="BrightPath Design Progress 1" class="case-study-image">
+                            <span class="image-overlay-hint">View larger</span>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="image-hover-wrapper" onclick="openModal(this)" data-image-src="../img/prog2brightpath.png" data-image-alt="BrightPath Design Progress 2">
+                            <img src="../img/prog2brightpath.png" alt="BrightPath Design Progress 2" class="case-study-image">
+                            <span class="image-overlay-hint">View larger</span>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="image-hover-wrapper" onclick="openModal(this)" data-image-src="../img/prog 3 brightpath.png" data-image-alt="BrightPath Design Progress 3">
+                            <img src="../img/prog 3 brightpath.png" alt="BrightPath Design Progress 3" class="case-study-image">
+                            <span class="image-overlay-hint">View larger</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="timeline-card">
-                    <div class="timeline-week">Week 7</div>
-                    <h4>Gamification Problem</h4>
-                    <p>Used the Five Whys technique to uncover the root issue: lack of reference material for ADHD-supportive gamification. Research led to the Observatory concept.</p>
-                </div>
-                <div class="timeline-card">
-                    <div class="timeline-week">Week 8</div>
-                    <h4>Scope Management</h4>
-                    <p>Struggled with prioritisation. Separated achievements into its own tab, refined Observatory, built out onboarding, and added multimedia examples.</p>
-                </div>
-                <div class="timeline-card">
-                    <div class="timeline-week">Week 9</div>
-                    <h4>Client Presentation & Pivot</h4>
-                    <p>Industry partners flagged that the app looked too similar to Xero's existing UI. Switched to custom graphics for stronger contrast and identity.</p>
-                </div>
-                <div class="timeline-card">
-                    <div class="timeline-week">Week 11</div>
-                    <h4>Final Focus</h4>
-                    <p>Narrowed primary accessibility audience to ADHD users. Committed to one fully-realised user flow: learning module → Observatory.</p>
-                </div>
-            </div>
-
-
-            <h3>Accessibility Considerations</h3>
-            <p>Understanding and applying the WCAG 2.0 framework was a central challenge. Alongside Nielsen Norman Group articles and video tutorials, the design choices were stress-tested against the real needs of users with ADHD.</p>
-            
-            <div class="accessibility-boxes">
-                <div class="accessibility-box">
-                    <div class="box-icon">🎯</div>
-                    <p><strong>Hit Box Sizes</strong><br>Large enough for comfortable interaction</p>
-                </div>
-                <div class="accessibility-box">
-                    <div class="box-icon">📖</div>
-                    <p><strong>Concise Content</strong><br>Skimmable throughout learning modules</p>
-                </div>
-                <div class="accessibility-box">
-                    <div class="box-icon">⚙️</div>
-                    <p><strong>Onboarding Settings</strong><br>Accessibility options inspired by Xbox</p>
-                </div>
-                <div class="accessibility-box">
-                    <div class="box-icon">🔄</div>
-                    <p><strong>Observatory Reference</strong><br>Persistent tool for revisiting content</p>
-                </div>
-                <div class="accessibility-box">
-                    <div class="box-icon">📐</div>
-                    <p><strong>Auto Layout</strong><br>Responsive & consistent Figma components</p>
-                </div>
-                <div class="accessibility-box">
-                    <div class="box-icon">♿</div>
-                    <p><strong>WCAG 2.0</strong><br>Accessibility compliance throughout</p>
+                <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+                <div class="carousel-indicators">
+                    <span class="indicator active" onclick="currentSlide(0)"></span>
+                    <span class="indicator" onclick="currentSlide(1)"></span>
+                    <span class="indicator" onclick="currentSlide(2)"></span>
                 </div>
             </div>
 
             <h3>User Testing</h3>
-            <p>A participatory walkthrough was conducted in Week 10 with a participant who has ADHD and is interested in starting an electrical contracting business — making him a primary target user for BrightPath. The participant walked through the prototype while asked questions about their expectations — what they thought features did, and what they expected to happen next at each step.</p>
-            
-            <div class="testing-results">
-                <div class="result-item">
-                    <div class="result-icon">✓</div>
-                    <p><strong>Observatory Validated</strong><br>Concept was understandable and useful</p>
-                </div>
-                <div class="result-item">
-                    <div class="result-icon">✓</div>
-                    <p><strong>User-Friendly Flow</strong><br>App felt friendly and clear to navigate</p>
-                </div>
-                <div class="result-item">
-                    <div class="result-icon">✓</div>
-                    <p><strong>Progress Tracking</strong><br>Visible progress highly valued by user</p>
-                </div>
-            </div>
+            <p>I conducted participatory walkthrough testing in week 10 with a participant who has ADHD and is interested in starting a business — making him a perfect fit for the target audience.</p>
+            <p>The testing validated the Observatory concept and confirmed the app felt user-friendly and clear to navigate. The participant particularly valued the visible progress tracking, which aligned perfectly with ADHD design principles.</p>
+            <p><strong>Test recording:</strong> <a href="https://youtu.be/enf6tIgZesw" target="_blank">https://youtu.be/enf6tIgZesw</a></p>
 
-            <h3>Final Presentation & Client Feedback</h3>
-            <p>The final presentation was delivered at RMIT on 27 May 2025 to RMIT staff, mentors, and Xero representatives Bronwyn Rees and Bobby Ly. The session highlighted the learning modules, onboarding experience, and the Observatory feature.</p>
-            
-            <p><strong>Client feedback highlights:</strong></p>
-            <ul>
-                <li>The astronomy theme was well received, though its visual consistency across the app needed refinement</li>
-                <li>Presentation delivery was praised for its effective use of statistics to engage the audience</li>
-                <li>Recommended choosing more visually distinct presentation slides from the app screens to improve audience experience</li>
-            </ul>
+            <h3>Final Presentation</h3>
+            <p>The final presentation was delivered on May 27th, 2025 at RMIT, with an audience including staff, mentors, and Xero representatives Bronwyn Rees and Bobby Ly.</p>
+            <p>I focused on the learning modules, onboarding flow, and Observatory feature, using statistics to engage the audience. The astronomy theme was well-received, though visual consistency needed refinement. The presentation was praised for its effective use of data to tell the story.</p>
+           
 
-            <h3>Reflection & Learnings</h3>
+            <h3>Reflection</h3>
+            <p>This project taught me the value of deep research and iteration in design. The Observatory feature evolved from a vague idea into something meaningful through systematic problem-solving and user validation. Working with real accessibility experts at Xero showed me how design constraints can actually drive better solutions.</p>
+            <p>The biggest lesson was about focus. Early on, I tried to implement too many gamification ideas at once, which cluttered the interface. The Five Whys technique helped me drill down to the root cause and find a more thoughtful approach.</p>
+            <p>Technically, I grew significantly in Figma, particularly with auto-layout and component systems. The project also reinforced agile principles — regular feedback loops and iterative development kept the project aligned with both user needs and business goals.</p>
             
-            <div class="learnings-grid">
-                <div class="learning-card">
-                    <div class="learning-icon">🔄</div>
-                    <h4>Agile Practice</h4>
-                    <p>Frequent iteration in response to mentor and client feedback was the backbone of the project. I'd refine my approach further with more structured sprint plans and earlier user testing cycles.</p>
-                </div>
-                
-                <div class="learning-card">
-                    <div class="learning-icon">⚖️</div>
-                    <h4>Prioritisation</h4>
-                    <p>Scope creep was a real challenge. I learned that doing one thing exceptionally well — a fully-realised learning flow — is more valuable than many half-finished features.</p>
-                </div>
-                
-                <div class="learning-card">
-                    <div class="learning-icon">♿</div>
-                    <h4>Accessibility Design</h4>
-                    <p>Applying WCAG 2.0 in practice revealed how nuanced inclusive design is. Designing for ADHD pushed me to rethink information density, layout clarity, and the role of visual progress cues.</p>
-                </div>
-                
-                <div class="learning-card">
-                    <div class="learning-icon">🤝</div>
-                    <h4>Working with Clients</h4>
-                    <p>Industry feedback from Xero was invaluable — and sometimes challenging. Learning to balance client vision with design rationale, and to advocate for users within those constraints, was a key professional skill gained.</p>
-                </div>
-            </div>
+            
 
-            <h3>Future Considerations</h3>
-            <p>If continued, the next phase of BrightPath would deepen the Observatory's functionality, strengthen the app's visual brand consistency, and refine learning content specifically optimised for ADHD learners. Further user testing with a broader cohort would validate accessibility decisions at scale, and the content could be curated more intentionally to position Xero as the natural next tool for users ready to formalise their business.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
     </section>
 
@@ -304,7 +271,13 @@
             </div>
         </div>
     </section>
-
+    <!-- Image Modal -->
+    <div id="galleryModal" class="image-modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <img id="galleryModalImage" src="" alt="">
+        </div>
+    </div>
     <!-- Footer -->
 <footer class="footer">
         <div class="footer-content">
@@ -350,5 +323,6 @@
             }
         });
     </script>
+    <script src="../javascript.js"></script>
 </body>
 </html>
